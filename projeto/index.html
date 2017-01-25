@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mario-css.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		    	<a class="navbar-brand" href="#">
+		    		<img alt="Logo" src="img/logo.png">
+		      	</a>
+		    </div>
+		    <div id="collapse-navbar" class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#sobre-nos">Sobre Nós</a></li>
+					<li><a href="#nossos-servicos">Nossos Serviços</a></li>
+					<li><a href="#contato-name">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="header-banner">
+		<h1>Mario Bros.</h1>
+		<p>Serviços em todo o Reino do Cogumelo desde 1981</p>
+		<a href="#contato-name"><button class="btn btn-primary btn-lg">Contate-nos agora</button></a>
+	</div>
+</header>
+<section id="sobre-nos" class="container">
+	<h2>Sobre Nós</h2>
+	<div class="col-md-6">
+	<img class="img-responsive img-equipe" src="img/equipe.jpeg" alt="Sobre Nós">
+	<p class="lead">Nascidos no Brooklyn, Nova Iorque, os irmãos Mario atuam no Reino dos Cogumelos em diferentes áreas dependendo da necessidade dos seus serviços.</p>
+	</div>
+	<div class="panel-group col-md-6" id="paineis-sobre">
+		<div class="panel panel-default">
+			<div id="painel-mario" class="panel-heading">
+				<h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-topico-texto" data-parent="#paineis-sobre">Mario</h3>
+			</div>
+			<div id="primeiro-topico-texto" class="collapse">
+				<div class="panel-body">
+					<img class="img-responsive img-equipe" src="img/mario.png" alt="Mario">
+					<p>Mario, o irmão mais velho. Conhecido por suas incríveis façanhas e por ser o lendário herói que já salvou o reino inumeras vezes de Bowser, o rei Koopa.</p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div id="painel-luigi" class="panel-heading">
+				<h3 class="panel-title" data-toggle="collapse" data-target="#segundo-topico-texto" data-parent="#paineis-sobre">Luigi</h3>
+			</div>
+			<div id="segundo-topico-texto" class="collapse">
+				<div class="panel-body">
+					<img class="img-responsive img-equipe" src="img/luigi.png" alt="Luigi">
+					<p>Luigi, o irmão mais novo. Sempre presente ajudando seu irmão nos momentos difíceis com suas habilidades e sua coragem.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="nossos-servicos" class="container">
+	<h2>Nossos Serviços</h2>
+	<figure class="thumbnail col-md-6">
+		<img class="servicos-img" src="img/servicos/servico-01.png" alt="Nossos Produtos">
+		<figcaption class="caption">
+			<h3>Encanadores</h3>
+			<p>Líderes no mercado! Consertamos qualquer cano!</p>
+		</figcaption>
+	</figure>
+	<figure class="thumbnail col-md-6">
+		<img class="servicos-img" src="img/servicos/servico-02.png" alt="Nossos Produtos">
+		<figcaption class="caption">
+			<h3>Médicos</h3>
+			<p>Curamos qualquer doença utilizando apenas algumas pílulas!</p>
+		</figcaption>
+	</figure>
+	<figure class="thumbnail col-md-6">
+		<img class="servicos-img" src="img/servicos/servico-03.png" alt="Nossos Produtos">
+		<figcaption class="caption">
+			<h3>Caça-fantasmas</h3>
+			<p>Fazemos uma limpeza geral de fantasmas na sua mansão!</p>
+		</figcaption>
+	</figure>
+	<figure class="thumbnail col-md-6">
+		<img class="servicos-img" src="img/servicos/servico-04.png" alt="Nossos Produtos">
+		<figcaption class="caption">
+			<h3>Heróis</h3>
+			<p>Resgatamos sua princesa de Koopas malvados!</p>
+		</figcaption>
+	</figure>
+</section>
+<section id="contato" class="container">
+	<h2>Contato</h2>
+	<p>Deixe sua mensagem para nós. Responderemos o mais breve possível, mesmo se você estiver em outro castelo!</p>
+	<form>
+		<div class="form-group">
+			<label for="contato-name">Nome:</label>
+			<input id="contato-name" class="form-control" type="text" placeholder="Seu Nome">
+		</div>
+		<div class="form-group">
+			<label for="contato-email">Email:</label>
+			<div class="input-group">
+				<div class="input-group-addon">@</div>
+				<input id="contato-email" class="form-control" type="email" placeholder="Seu Email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="contato-email">Telefone:</label>
+			<input id="contato-telefone" class="form-control" type="text" placeholder="Seu Telefone">
+		</div>
+		<div class="form-group">
+			<label for="contato-mensagem">Sua mensagem</label>
+			<textarea id="contato-mensagem" class="form-control"></textarea>
+		</div>
+		<button class="btn btn-primary">Enviar</button>
+	</form>
+</section>
+<footer>
+	<address>
+		<strong>Mario Bros.</strong><br>
+		Casa do Mario, s/n<br>
+		Reino dos Cogumelos
+	</address>
+	<address>
+		Telefone: 0800-123-1981<br>
+		Email: <a href="mailto:#">mario@mariobros.com</a>
+	</address>
+</footer>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
